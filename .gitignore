@@ -9,3 +9,42 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .pyright/
+
+# Local build outputs and caches
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+.cache/
+.ruff_cache/
+.tox/
+
+# Editor and IDE state
+.idea/
+*.swp
+*.swo
+*~
+
+# Simulation outputs: keep the directories, not generated media/data
+results/screenshots/*
+!results/screenshots/.gitkeep
+results/videos/*
+!results/videos/.gitkeep
+results/metrics/*
+!results/metrics/.gitkeep
+*.bag
+*.db3
+*.mcap
+
+# Local credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa*
+id_ed25519*
+secrets.json
+credentials.json
